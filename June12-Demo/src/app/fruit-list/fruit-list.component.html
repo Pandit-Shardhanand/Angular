@@ -1,0 +1,10 @@
+<h3>List Of Fruits</h3>
+<ul>
+    @for(f of fruitList;track f)
+    {
+        <li>{{f}}</li>
+    }
+    @empty {
+        <li>No Fruits to Display..</li>
+    }
+</ul>

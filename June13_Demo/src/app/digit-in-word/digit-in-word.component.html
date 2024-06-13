@@ -1,0 +1,24 @@
+<div class="Container">
+    <div class="card m-5">
+        <div class="card-header bg-primary fw-bold text-white text-center">
+            Print Digit In Word
+        </div>
+        <div class="card-body">
+            Enter a digit : <input type="number" min="0" max="9" [(ngModel)]="digit">
+            <div [ngSwitch]="digit">
+                <h3 *ngSwitchCase="0">Zero</h3>
+                <h3 *ngSwitchCase="1">One</h3>
+                <h3 *ngSwitchCase="2">Two</h3>
+                <h3 *ngSwitchCase="3">Three</h3>
+                <h3 *ngSwitchCase="4">Four</h3>
+                <h3 *ngSwitchCase="5">Five</h3>
+                <h3 *ngSwitchCase="6">Six</h3>
+                <h3 *ngSwitchCase="7">Seven</h3>
+                <h3 *ngSwitchCase="8">Eight</h3>
+                <h3 *ngSwitchCase="9">Nine</h3>
+                <h3 *ngSwitchCase="10">Ten</h3>
+                <h3 *ngSwitchDefault>Invalid Digit</h3>
+            </div>
+        </div>
+    </div>
+</div>

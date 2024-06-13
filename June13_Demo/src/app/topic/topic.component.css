@@ -1,0 +1,15 @@
+img{
+    height: 100px;
+    width: 130px;
+    float: right;
+}
+p{
+    color: darkolivegreen;
+    font-size: large;
+    font-weight: bold;
+}
+.divClass{
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+}
