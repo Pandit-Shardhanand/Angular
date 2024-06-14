@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header">
+        Employee Search
+    </div>
+    <div class="card-body">
+        Select Employee Name :
+        <select [(ngModel)]="selectedId" class="form-control">
+            @for (emp of empList;track emp.empId){
+                <option [value]="emp.empId">{{emp.empFirstName}}</option>
+            }
+        </select>
+        <button class="btn btn-primary"(click)="getEmployee()">Search</button>
+    </div>
+</div>
+<!-- <h3> Employee Id : {{selectedId}}</h3> -->
+ @if(e.empId!=0)
+ {
+    <div class="card">
+        <div class="card-header bg-warning">
+            Employee Details
+        </div>
+        <div class="card-body">
+            <h4>Employee Id : {{e.empId}}</h4>
+            <h4>Employee Full Name : {{e.empFirstName}} {{e.empLastName}}</h4>
+            <h4>Salary : Rs.{{e.empSalary}}</h4>
+
+        </div>
+    </div>
+ }

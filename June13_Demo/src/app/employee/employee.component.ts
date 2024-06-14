@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-employee',
+  standalone: true,
+  imports: [FormsModule],
+  templateUrl: './employee.component.html',
+  styleUrl: './employee.component.css'
+})
+export class EmployeeComponent {
+  empId:number=0;
+  empFirstName:string="";
+  empLirstName:string="";
+  empSalary:number=0
+}
+
+
